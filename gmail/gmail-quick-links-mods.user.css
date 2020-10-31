@@ -3,7 +3,6 @@
  * @namespace    http://github.com/exterrestris
  * @description  Adjusts the quick links extension to fit within Gmail's visual look
  * @version      0.3.1
- * @match        https://mail.google.com/*
  ==/UserStyle== */
 
 @namespace url(http://www.w3.org/1999/xhtml);
