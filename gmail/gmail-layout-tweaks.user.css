@@ -1,45 +1,49 @@
 /* ==UserStyle==
  * @name         Misc Layout Tweaks for Gmail
  * @namespace    http://github.com/exterrestris
- * @version      0.3.0
+ * @description  Assorted layout tweaks for Gmail
+ * @version      0.3.1
  * @match        https://mail.google.com/*
  ==/UserStyle== */
 
 @namespace url(http://www.w3.org/1999/xhtml);
-.age.apN {
-  overflow-x: auto;
-}
 
-.age.apP {
-  overflow-x: hidden;
-}
+@-moz-document domain("mail.google.com") {
+  .age.apN {
+    overflow-x: auto;
+  }
 
-.aps {
-   background-color: #f0f0ff;
-}
+  .age.apP {
+    overflow-x: hidden;
+  }
 
-.xX {
-  width: 13ex;
-}
+  .aps {
+    background-color: #f0f0ff;
+  }
 
-.Wg {
-  padding-right: 8px;
-  padding-top: 10px;
-}
+  .xX {
+    width: 13ex;
+  }
 
-.a3s img {
-  max-width: 100%;
-  height: auto;
-}
+  .Wg {
+    padding-right: 8px;
+    padding-top: 10px;
+  }
 
-.a3s :not(table):not(tbody):not(tr):not(th):not(td) > table:not([width]):not([style*="width"]), .aHU :not(table):not(tbody):not(tr):not(th):not(td) > table[width]:not([align]):not([width$="%"]) {
-  width: 100% !important;
-}
+  .a3s img {
+    max-width: 100%;
+    height: auto;
+  }
 
-.ao8 {
-  padding-right: 0;
-}
+  .a3s :not(table):not(tbody):not(tr):not(th):not(td) > table:not([width]):not([style*="width"]), .aHU :not(table):not(tbody):not(tr):not(th):not(td) > table[width]:not([align]):not([width$="%"]) {
+    width: 100% !important;
+  }
 
-* {
-  scrollbar-width: thin;
+  .ao8 {
+    padding-right: 0;
+  }
+
+  * {
+    scrollbar-width: thin;
+  }
 }

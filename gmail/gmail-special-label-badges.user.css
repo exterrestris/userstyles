@@ -1,311 +1,315 @@
 /* ==UserStyle==
  * @name         Adjustments to 'Special' Label Badges for New Gmail
  * @namespace    http://github.com/exterrestris
- * @version      0.3.0
+ * @description  Custom styling for specific label badges
+ * @version      0.3.1
  * @match        https://mail.google.com/*
  ==/UserStyle== */
 
 @namespace url(http://www.w3.org/1999/xhtml);
-/****************
- * Message List *
- ****************/
-.ar.as .at[title*="Snooze"], .ar.as .at[title*="Keep"] {
-  background-color: transparent !important;
-  border: none !important;
-  width: 3.1ex;
-}
-
-.ar.as .at[title*="Snooze"]:before, .ar.as .at[title*="Keep"]:before {
-  height: 2.9ex;
-  width: 2.9ex;
-  line-height: 3.2ex;
-  text-align: center;
-  position: absolute;
-  overflow: visible;
-  color: #444;
-  margin-top: -3px;
-  font-size: 129%;
-  font-family: "Segoe UI Emoji", "Segoe UI Symbol";
-  left: -2px;
-}
-
-.ar.as .at[title*="Snooze"]:before {
-  content: "\23F0";
-  margin-top: -4px;
-}
-
-.ar.as .at[title*="Keep"]:before {
-  content: "\267B";
-  color: #555;
-}
-
-/****************
- * Preview Pane *
- ****************/
-.hU.hM .hN[title*="Snooze"], .hU.hM .hN[title*="Keep"] {
-  white-space: nowrap;
-  margin-left: 3ex;
-  text-align: right;
-  direction: rtl;
-}
-
-/* Keep For */
-.hU.hM .hN[title*="Keep"] {
-  max-width: 4ch;
-}
-
-.hU.hM .hN[title*="Keep"][title*="Week"] {
-  max-width: 5.4ch;
-}
-
-.hU.hM .hN[title*="Keep"][title*="Weeks"] {
-  max-width: 6.4ch;
-}
-
-.hU.hM .hN[title*="Keep"][title*="Month"] {
-  max-width: 6.2ch;
-}
-
-.hU.hM .hN[title*="Keep"][title*="Months"] {
-  max-width: 7.2ch;
-}
-
-.hU.hM .hN[title*="Keep"][title*="Year"] {
-  max-width: 4.6ch;
-}
-
-.hU.hM .hN[title*="Keep"][title*="Years"] {
-  max-width: 5.6ch;
-}
-
-/* Snooze */
-.hU.hM .hN[title$="Snooze"] {
-  max-width: 0ch;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* Snooze For */
-.hU.hM .hN[title*="Snooze"][title*="For"][title*="Hour"] {
-  max-width: 6.0ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="For"][title*="Hour"][title*="1"] {
-  max-width: 4.9ch;
-}
-
-
-.hU.hM .hN[title*="Snooze"][title*="For"][title*="Minute"] {
-  max-width: 8.3ch;
-}
-
-/* Snooze Until */
-.hU.hM .hN[title*="Snooze"][title*="Later"] {
-  max-width: 3.5ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Today"][title*="Morning"] {
-  max-width: 10.4ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Today"][title*="Lunch"] {
-  max-width: 4.6ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Today"][title*="Afternoon"] {
-  max-width: 11.8ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Today"][title*="Evening"] {
-  max-width: 9.9ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Tonight"] {
-  max-width: 5.8ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Tomorrow"] {
-  max-width: 7.8ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Tomorrow"][title*="Morning"] {
-  max-width: 15.6ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Tomorrow"][title*="Lunch"] {
-  max-width: 13.8ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Tomorrow"][title*="Afternoon"] {
-  max-width: 16.9ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Tomorrow"][title*="Evening"] {
-  max-width: 15.2ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Tomorrow"][title*="Night"] {
-  max-width: 13.2ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="This Weekend"] {
-  max-width: 11.1ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Next Week"] {
-  max-width: 8.3ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Next Weekend"] {
-  max-width: 11.2ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Next Month"] {
-  max-width: 9.2ch;
-}
-
-/* Snooze Days */
-.hU.hM .hN[title*="Snooze"][title*="Monday"] {
-  max-width: 6.0ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Tuesday"] {
-  max-width: 6.3ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Wednesday"] {
-  max-width: 8.9ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Thursday"] {
-  max-width: 7.1ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Friday"] {
-  max-width: 4.6ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Saturday"] {
-  max-width: 6.8ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Sunday"] {
-  max-width: 5.5ch;
-}
-
-/* Snooze Times */
-.hU.hM .hN[title*="Snooze"][title*="Time"] {
-  max-width: 4.1ch;
-  margin-left: 3.1ex;
-}
-
-/* Snooze Months */
-.hU.hM .hN[title*="Snooze"][title*="January"] {
-  max-width: 5.9ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="February"] {
-  max-width: 6.8ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="March"] {
-  max-width: 4.7ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="April"] {
-  max-width: 3.4ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="May"] {
-  max-width: 3.1ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="June"] {
-  max-width: 3.4ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="July"] {
-  max-width: 2.8ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="August"] {
-  max-width: 5.3ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="September"] {
-  max-width: 8.4ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="October"] {
-  max-width: 6.0ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="November"] {
-  max-width: 7.9ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="December"] {
-  max-width: 7.9ch;
-}
-
-/* Snooze Dates */
-.hU.hM .hN[title*="Snooze"][title*="Date"][title*="/1"] {
-  max-width: 3.2ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Date"][title*="/2"] {
-  max-width: 3.2ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Date"][title$="/21st"], .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/31st"] {
-  max-width: 3.2ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Date"][title$="/22nd"] {
-  max-width: 3.6ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Date"][title$="/30th"] {
-  max-width: 3.2ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Date"][title$="/1st"] {
-  max-width: 2ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Date"][title$="/2nd"] {
-  max-width: 2.6ch;
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Date"][title$="/3rd"], .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/4th"], .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/5th"], .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/9th"] {
-  max-width: 2.2ch
-}
-
-.hU.hM .hN[title*="Snooze"][title*="Date"][title$="/6th"], .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/7th"], .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/8th"] {
-  max-width: 2.2ch
-}
-
-/* Emoji */
-.hU.hM .hN[title*="Snooze"]:before, .hU.hM .hN[title*="Keep"]:before {
-  height: 2.8ex;
-  width: 2.8ex;
-  line-height: 2.6ex;
-  text-align: center;
-  position: absolute;
-  color: #444;
-  margin-top: -1px;
-  font-size: 120%;
-  left: 2px;
-}
-
-.hU.hM .hN[title*="Snooze"]:before {
-  content: "\23F0";
-}
-
-.hU.hM .hN[title*="Keep"]:before {
-  content: "\267B";
-  font-size: 140%;
-  margin-top: -2px;
-  color: #555;
-  left: 0px;
+
+@-moz-document domain("mail.google.com") {
+  /****************
+  * Message List *
+  ****************/
+  .ar.as .at[title*="Snooze"], .ar.as .at[title*="Keep"] {
+    background-color: transparent !important;
+    border: none !important;
+    width: 3.1ex;
+  }
+
+  .ar.as .at[title*="Snooze"]:before, .ar.as .at[title*="Keep"]:before {
+    height: 2.9ex;
+    width: 2.9ex;
+    line-height: 3.2ex;
+    text-align: center;
+    position: absolute;
+    overflow: visible;
+    color: #444;
+    margin-top: -3px;
+    font-size: 129%;
+    font-family: "Segoe UI Emoji", "Segoe UI Symbol";
+    left: -2px;
+  }
+
+  .ar.as .at[title*="Snooze"]:before {
+    content: "\23F0";
+    margin-top: -4px;
+  }
+
+  .ar.as .at[title*="Keep"]:before {
+    content: "\267B";
+    color: #555;
+  }
+
+  /****************
+  * Preview Pane *
+  ****************/
+  .hU.hM .hN[title*="Snooze"], .hU.hM .hN[title*="Keep"] {
+    white-space: nowrap;
+    margin-left: 3ex;
+    text-align: right;
+    direction: rtl;
+  }
+
+  /* Keep For */
+  .hU.hM .hN[title*="Keep"] {
+    max-width: 4ch;
+  }
+
+  .hU.hM .hN[title*="Keep"][title*="Week"] {
+    max-width: 5.4ch;
+  }
+
+  .hU.hM .hN[title*="Keep"][title*="Weeks"] {
+    max-width: 6.4ch;
+  }
+
+  .hU.hM .hN[title*="Keep"][title*="Month"] {
+    max-width: 6.2ch;
+  }
+
+  .hU.hM .hN[title*="Keep"][title*="Months"] {
+    max-width: 7.2ch;
+  }
+
+  .hU.hM .hN[title*="Keep"][title*="Year"] {
+    max-width: 4.6ch;
+  }
+
+  .hU.hM .hN[title*="Keep"][title*="Years"] {
+    max-width: 5.6ch;
+  }
+
+  /* Snooze */
+  .hU.hM .hN[title$="Snooze"] {
+    max-width: 0ch;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Snooze For */
+  .hU.hM .hN[title*="Snooze"][title*="For"][title*="Hour"] {
+    max-width: 6.0ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="For"][title*="Hour"][title*="1"] {
+    max-width: 4.9ch;
+  }
+
+
+  .hU.hM .hN[title*="Snooze"][title*="For"][title*="Minute"] {
+    max-width: 8.3ch;
+  }
+
+  /* Snooze Until */
+  .hU.hM .hN[title*="Snooze"][title*="Later"] {
+    max-width: 3.5ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Today"][title*="Morning"] {
+    max-width: 10.4ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Today"][title*="Lunch"] {
+    max-width: 4.6ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Today"][title*="Afternoon"] {
+    max-width: 11.8ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Today"][title*="Evening"] {
+    max-width: 9.9ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Tonight"] {
+    max-width: 5.8ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Tomorrow"] {
+    max-width: 7.8ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Tomorrow"][title*="Morning"] {
+    max-width: 15.6ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Tomorrow"][title*="Lunch"] {
+    max-width: 13.8ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Tomorrow"][title*="Afternoon"] {
+    max-width: 16.9ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Tomorrow"][title*="Evening"] {
+    max-width: 15.2ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Tomorrow"][title*="Night"] {
+    max-width: 13.2ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="This Weekend"] {
+    max-width: 11.1ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Next Week"] {
+    max-width: 8.3ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Next Weekend"] {
+    max-width: 11.2ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Next Month"] {
+    max-width: 9.2ch;
+  }
+
+  /* Snooze Days */
+  .hU.hM .hN[title*="Snooze"][title*="Monday"] {
+    max-width: 6.0ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Tuesday"] {
+    max-width: 6.3ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Wednesday"] {
+    max-width: 8.9ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Thursday"] {
+    max-width: 7.1ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Friday"] {
+    max-width: 4.6ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Saturday"] {
+    max-width: 6.8ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Sunday"] {
+    max-width: 5.5ch;
+  }
+
+  /* Snooze Times */
+  .hU.hM .hN[title*="Snooze"][title*="Time"] {
+    max-width: 4.1ch;
+    margin-left: 3.1ex;
+  }
+
+  /* Snooze Months */
+  .hU.hM .hN[title*="Snooze"][title*="January"] {
+    max-width: 5.9ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="February"] {
+    max-width: 6.8ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="March"] {
+    max-width: 4.7ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="April"] {
+    max-width: 3.4ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="May"] {
+    max-width: 3.1ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="June"] {
+    max-width: 3.4ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="July"] {
+    max-width: 2.8ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="August"] {
+    max-width: 5.3ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="September"] {
+    max-width: 8.4ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="October"] {
+    max-width: 6.0ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="November"] {
+    max-width: 7.9ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="December"] {
+    max-width: 7.9ch;
+  }
+
+  /* Snooze Dates */
+  .hU.hM .hN[title*="Snooze"][title*="Date"][title*="/1"] {
+    max-width: 3.2ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Date"][title*="/2"] {
+    max-width: 3.2ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/21st"], .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/31st"] {
+    max-width: 3.2ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/22nd"] {
+    max-width: 3.6ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/30th"] {
+    max-width: 3.2ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/1st"] {
+    max-width: 2ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/2nd"] {
+    max-width: 2.6ch;
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/3rd"], .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/4th"], .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/5th"], .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/9th"] {
+    max-width: 2.2ch
+  }
+
+  .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/6th"], .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/7th"], .hU.hM .hN[title*="Snooze"][title*="Date"][title$="/8th"] {
+    max-width: 2.2ch
+  }
+
+  /* Emoji */
+  .hU.hM .hN[title*="Snooze"]:before, .hU.hM .hN[title*="Keep"]:before {
+    height: 2.8ex;
+    width: 2.8ex;
+    line-height: 2.6ex;
+    text-align: center;
+    position: absolute;
+    color: #444;
+    margin-top: -1px;
+    font-size: 120%;
+    left: 2px;
+  }
+
+  .hU.hM .hN[title*="Snooze"]:before {
+    content: "\23F0";
+  }
+
+  .hU.hM .hN[title*="Keep"]:before {
+    content: "\267B";
+    font-size: 140%;
+    margin-top: -2px;
+    color: #555;
+    left: 0px;
+  }
 }
