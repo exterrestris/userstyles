@@ -1,0 +1,45 @@
+/* ==UserStyle==
+ * @name         Misc Layout Tweaks for Gmail
+ * @namespace    http://github.com/exterrestris
+ * @version      0.3.0
+ * @match        https://mail.google.com/*
+ ==/UserStyle== */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+.age.apN {
+  overflow-x: auto;
+}
+
+.age.apP {
+  overflow-x: hidden;
+}
+
+.aps {
+   background-color: #f0f0ff;
+}
+
+.xX {
+  width: 13ex;
+}
+
+.Wg {
+  padding-right: 8px;
+  padding-top: 10px;
+}
+
+.a3s img {
+  max-width: 100%;
+  height: auto;
+}
+
+.a3s :not(table):not(tbody):not(tr):not(th):not(td) > table:not([width]):not([style*="width"]), .aHU :not(table):not(tbody):not(tr):not(th):not(td) > table[width]:not([align]):not([width$="%"]) {
+  width: 100% !important;
+}
+
+.ao8 {
+  padding-right: 0;
+}
+
+* {
+  scrollbar-width: thin;
+}
