@@ -2,7 +2,7 @@
  * @name         Gmail Quick Links Extension Mods for new Gmail
  * @namespace    http://github.com/exterrestris
  * @description  Adjusts the quick links extension to fit within Gmail's visual look
- * @version      0.3.1
+ * @version      0.4.0
  ==/UserStyle== */
 
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -36,7 +36,7 @@
   #gmailQuickLinks #listContainer > div > div {
     position: relative;
     padding-left: 58px;
-    padding-right: 10px;
+    padding-right: 9px;
     height: 32px;
     display: flex;
     align-items: center;
@@ -99,6 +99,12 @@
     float: none;
     flex: none;
     z-index: 3;
+    margin-left: 3px;
+    display: none;
+  }
+
+  #gmailQuickLinks #listContainer > div > div:hover > span {
+    display: block;
   }
 
   #gmailQuickLinks #listContainer > div > div > .clear {
