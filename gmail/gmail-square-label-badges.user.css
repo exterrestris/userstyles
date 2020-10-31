@@ -1,8 +1,7 @@
 /* ==UserStyle==
  * @name         Rounded Square Label Badges for New Gmail
- * @namespace    github.com/exterrestris
- * @version      0.3.0
- * @description  Loosely based on https://userstyles.org/styles/109101/gmail-badges-rounded-in-message-indexes with some modifications: labels do not expand on hover, and are now displayed as square "badges" to better fit within the new Gmail styling
+ * @namespace    http://github.com/exterrestris
+ * @version      0.3.1
  * @match        https://mail.google.com/*
  ==/UserStyle== */
 
