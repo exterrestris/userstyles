@@ -1,0 +1,14 @@
+/* ==UserStyle==
+ * @name         Misc Tweaks for Todoist
+ * @namespace    http://github.com/exterrestris
+ * @description  Assorted tweaks for Todoist
+ * @version      0.1.0
+ ==/UserStyle== */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("todoist.com") {
+  * {
+    scrollbar-width: thin;
+  }
+}
