@@ -2,7 +2,7 @@
  * @name         Gmail Quick Links Extension Mods for new Gmail
  * @namespace    http://github.com/exterrestris
  * @description  Adjusts the quick links extension to fit within Gmail's visual look
- * @version      0.4.0
+ * @version      0.5.0
  ==/UserStyle== */
 
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -14,105 +14,110 @@
 
   #gmailQuickLinks {
     width: 240px;
-  }
 
-  #gmailQuickLinks .r {
-    font-size: 80%;
-  }
+    .r {
+      font-size: 80%;
 
-  #gmailQuickLinks .r :first-child {
-    opacity: 0;
-  }
+      :first-child {
+        opacity: 0;
+      }
+    }
 
-  #gmailQuickLinks .pU {
-    white-space: nowrap;
-    margin-left: 70px;
-  }
+    .pU {
+      white-space: nowrap;
+      margin-left: 70px;
+    }
 
-  #gmailQuickLinks #listContainer > div, #gmailQuickLinks #listContainer {
-    padding-left: 0 !important;
-  }
+    #listContainer {
+      padding-left: 0 !important;
 
-  #gmailQuickLinks #listContainer > div > div {
-    position: relative;
-    padding-left: 58px;
-    padding-right: 9px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-  }
+      > div {
+        padding-left: 0 !important;
+        white-space: nowrap;
+        overflow: hidden;
 
-  #gmailQuickLinks #listContainer > div > div::before,  #gmailQuickLinks #listContainer > div > div::after {
-    content: '';
-    position: absolute;
-    display: block;
-    pointer-events: none;
-  }
+        > div {
+          position: relative;
+          padding-left: 58px;
+          padding-right: 9px;
+          height: 32px;
+          display: flex;
+          align-items: center;
 
-  #gmailQuickLinks #listContainer > div > div::before {
-    left: 27px;
-    top: -2px;
-    width: 18px;
-    height: 18px;
-    transform: translateY(50%);
-    background: #ccc url('https://ssl.gstatic.com/ui/v1/icons/mail/pimages/2/search_white.png');
-    z-index: 2;
-    border-radius: 4px;
-  }
+          > span {
+            float: none;
+            flex: none;
+            z-index: 3;
+            margin-left: 3px;
+            display: none;
+          }
 
-  #gmailQuickLinks #listContainer > div > div::after {
-    border-radius: 16px;
-    transition: border-radius .15s cubic-bezier(0.4,0.0,0.2,1),margin .15s cubic-bezier(0.4,0.0,0.2,1),width .15s cubic-bezier(0.4,0.0,0.2,1);
-  }
+          .clear {
+            display: none;
+          }
 
-  #gmailQuickLinks #listContainer > div > div:hover::after {
-    background-color: #f1f3f4;
-    height: 32px;
-    width: 32px;
-    top: 0;
-    left: 20px;
-  }
+          &::before, &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            pointer-events: none;
+          }
 
-  .bhZ.bym #gmailQuickLinks #listContainer > div > div::after {
-    margin: 0 -36px;
-    width: 256px;
-  }
+          &::before {
+            left: 27px;
+            top: -2px;
+            width: 18px;
+            height: 18px;
+            transform: translateY(50%);
+            background: #ccc url('https://ssl.gstatic.com/ui/v1/icons/mail/pimages/2/search_white.png');
+            z-index: 2;
+            border-radius: 4px;
+          }
 
-  #gmailQuickLinks #listContainer .n0 {
-    text-decoration: none !important;
-    font-size: 14px;
-    color: inherit !important;
-    flex: 1 1 0;
-    display: inline-block;
-    margin-left: -60px;
-    height: 32px;
-    line-height: 32px;
-    padding-left: 66px;
-    z-index: 3;
-  }
+          &::after {
+            border-radius: 16px;
+            transition: border-radius .15s cubic-bezier(0.4,0.0,0.2,1),margin .15s cubic-bezier(0.4,0.0,0.2,1),width .15s cubic-bezier(0.4,0.0,0.2,1);
 
-  .bhZ:not(.bym) #gmailQuickLinks .po, .bhZ:not(.bym) #gmailQuickLinks .r, .bhZ:not(.bym) #gmailQuickLinks #listContainer > div > div > * {
-    opacity: 0;
-  }
+            .bhZ.bym & {
+              margin: 0 -36px;
+              width: 256px;
+            }
+          }
 
-  #gmailQuickLinks #listContainer > div > div > span {
-    float: none;
-    flex: none;
-    z-index: 3;
-    margin-left: 3px;
-    display: none;
-  }
+          &:hover {
+            &::after {
+              background-color: #f1f3f4;
+              height: 32px;
+              width: 32px;
+              top: 0;
+              left: 20px;
+            }
+            
+            > span {
+              display: block;
+            }
+          }
+        }
+      }
 
-  #gmailQuickLinks #listContainer > div > div:hover > span {
-    display: block;
-  }
+      .n0 {
+        text-decoration: none !important;
+        font-size: 14px;
+        color: inherit !important;
+        flex: 1 1 0;
+        display: inline-block;
+        margin-left: -60px;
+        height: 32px;
+        line-height: 32px;
+        padding-left: 66px;
+        z-index: 3;
+      }
+    }
 
-  #gmailQuickLinks #listContainer > div > div > .clear {
-    display: none;
-  }
-
-  #gmailQuickLinks #listContainer > div {
-    white-space: nowrap;
-    overflow: hidden;
+    .bhZ:not(.bym) & {
+      .po, .r, #listContainer > div > div > * {
+        opacity: 0;
+      }
+    }
   }
 }
