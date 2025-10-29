@@ -2,7 +2,7 @@
  * @name         Adjustments to 'Special' Label Badges for New Gmail
  * @namespace    http://github.com/exterrestris
  * @description  Custom styling for specific label badges
- * @version      0.5.1
+ * @version      0.5.2
  ==/UserStyle== */
 
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -47,10 +47,10 @@
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAqJJREFUeNrUWTtuwkAQNSZFCqQ4VcqQNpU5AeYGREofOAFwgkCZClKlNPSRcE4QOAFOg9IBZTpTICVdZqWxtEJr78e7/jzJwpjFvDczOx9TtyqCm8fbbuPe+T1tjxF93baqgykczfOLdkWsP0TyXuUEAHkXrc+EXXLyDrx8UpfalRFAkXfS1tklDpsNHC5vrV1C8h5avimy3i4Z+bFI2NC4KAlxYm2flSZL7wHM8RsV8oV6QNHqUSk8kMHqX4V6IEusF+6BrLGOCHP3gAarpwqwDZPvarB6jP3P+yG/EALypINcyhQlDla5pFFswgj5nuZbr40LoDpI14BTA6lKjB2hLIyRZ8V/ogDGICFifd8QeYIP2V6IxK+DWUQ02/QMkY/A+nNZAU/4OhCMe99gNn6V6kax8MSh4Al4YagxVbJah5lsO31edHy0ssXxlglMkjZvmoDzUc7BgpQ0/jUNkQ+B/ExloGmzvIKVlectnRjpnsiGIKInIFZX6KxMjJRTxQIn1fMA+bHJmXjJ2dRZ2+UHk0N9iJv22RD5Di/riAhYp6x3sK0dag4lJfJJAsKU9S4lcMBZK9PnK5FnCoAbBazhmcIVfk4y0iEj+Rn8njL5tD0QcLwQZB0P0eqjrO5LEjBJ+Y5HWT5EMjK9Dbl3SzTPKwmAm+85ImhCot6YI/FxlpA5R43TKic9oyekPSByjd3rLiVUFhjrkWUAvJm4kzAmdqk2t8sgTQQugHRoGUZNcVAn1rzD8x3WhxHOrnsrR3ArMbq+gzEco4/XfSRPiM/yJi/kAcbsuwSitfgcvdEqgjxBXWbxaXv8btw75C//P3j7BsclHC9Y/AqByoOtFTXE72Va30L2AAN0+9C3CoaKgHgKC3RV07wFRBhGI6sE+BdgAGI76DCVwiGiAAAAAElFTkSuQmCC);
       background-position: 0;
       background-size: contain;
-      left: 2px;
+      left: 0px;
       top: 3px;
-      width: 17px;
-      height: 17px;
+      width: 18px;
+      height: 18px;
     }
   }
 
